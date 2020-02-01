@@ -11,7 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito|Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
     <title>MY CV/RESUME</title>
     <style>
         .img-work {
@@ -21,6 +21,48 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
+        }
+
+        .img-skills {
+            height: 470px;
+            background: url("assets/works.jpg");
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all .8s;
+        }
+
+        .img-skills:hover .overlay {
+            opacity: 0.9;
+        }
+
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(73, 182, 255, 0.377);
+        }
+
+        .text {
+            background: rgb(32, 32, 32);
+            padding: 5px 30px;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
         }
 
         #past {
@@ -112,7 +154,7 @@
                                     <h2 class="mt-0 mb-0">Hi, I am Hafidz</h2>
                                     <h4 class="mt-0" style="margin-top:-20px;">Web Developer</h4>
                                     <p>
-                                        I graduated from STMIK Duta Bangsa Surakrarta and my major is an information
+                                        I graduated from STMIK Duta Bangsa Surakarta and my major is an information
                                         system with a
                                         bachelor's degree.
                                         I have built several web based system information, and i have built it using
@@ -148,16 +190,16 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="text-primary mb-1">
                                                 <i class=" fa fa-calendar-minus-o fa-fw" aria-hidden="true"></i>&nbsp;
-                                                Date of
-                                                Birth :
+                                                Born :
                                             </div>
-                                            06 April 1996
+                                            Surakarta, 06 April 1996
 
                                             <div class="mt-3 text-primary mb-1">
-                                                <i class=" fa fa-birthday-cake fa-fw" aria-hidden="true"></i>&nbsp; Age
+                                                <i class=" fa fa-github fa-fw" aria-hidden="true"></i>&nbsp;
+                                                Github
                                                 :
                                             </div>
-                                            <?= date("Y")-1996;?> Years
+                                            @hafidz-annur
                                         </div>
 
                                         <div class="col-md-8">
@@ -290,6 +332,65 @@
                                 </div>
                         </section>
                         <section id="past"></section>
+                        <section id="skills">
+                            <div class="row">
+                                <div class="col-md-4 img-skills">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h2 class="mb-0">Skills</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 pl-5 content">
+                                    <h4 class="mb-4">Skills</h4>
+                                    <hr class="hr-title">
+                                    <div class="badge p-2 bg-info text-white mb-2 mr-2">PHP Native</div>
+                                    <div class="badge p-2 bg-danger text-white mb-2 mr-2">Framework Codeigniter</div>
+                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">HTML</div>
+                                    <div class="badge p-2 bg-success text-white mb-2 mr-2">Javascript</div>
+                                    <div class="badge p-2 bg-warning text-white mb-2 mr-2">CSS</div>
+                                    <div class="badge p-2 bg-primary text-white mb-2 mr-2">Jquery</div>
+                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">MYSQL</div>
+                                    <div class="badge p-2 bg-success text-white mb-2 mr-2">Framework Codeigniter</div>
+                                    <div class="badge p-2 bg-secondary text-white mb-2 mr-2">Bootstrap</div>
+
+                                    <div class="text-danger mt-3">Tools</div>
+                                    <hr class="mt-1 mb-2">
+                                    <div class="badge p-2 bg-danger text-white mb-2 mr-2">Visual Studio Code</div>
+                                    <div class="badge p-2 bg-info text-white mb-2 mr-2">Coreldraw</div>
+                                    <div class="badge p-2 bg-success text-white mb-2 mr-2">XAMPP</div>
+                                    <div class="badge p-2 bg-secondary text-white mb-2 mr-2">Web Hosting</div>
+                                    <div class="badge p-2 bg-warning text-white mb-2 mr-2">Photoshop</div>
+                                    <div class="badge p-2 bg-danger text-white mb-2 mr-2">Wordpress</div>
+                                    <div class="badge p-2 bg-primary text-white mb-2 mr-2">Microsoft Office</div>
+                                    <div class="text-danger mt-3">Languages</div>
+                                    <hr class="mt-1 mb-2">
+                                    <label>Javanese :</label>
+                                    <div class="progress border border-primary" style="height:25px;">
+                                        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
+                                            role="progressbar" style="width: 75%" aria-valuenow="10" aria-valuemin="0"
+                                            aria-valuemax="100">75%
+                                        </div>
+                                    </div>
+                                    <label class="mt-3">Indonesia :</label>
+                                    <div class="progress border border-success" style="height:25px;">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                            role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0"
+                                            aria-valuemax="100">80%
+                                        </div>
+                                    </div>
+                                    <label class="mt-3">English :</label>
+                                    <div class="progress border border-warning" style="height:25px;">
+                                        <div class="progress-bar bg-warning text-dark progress-bar-striped progress-bar-animated"
+                                            role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0"
+                                            aria-valuemax="100">60%
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>

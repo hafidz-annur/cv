@@ -192,6 +192,15 @@
     opacity: 0.9;
 }
 
+#skills{
+    padding: 50px 10px 80px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#skills .badge{
+    font-size: 11px;
+}
+
 
 @media only screen and (max-width: 800px) {
     .col-menus {
@@ -264,7 +273,7 @@
         margin: -40px -48px;
         padding: 70px 10px 30px 10px;
         background: #4271ff;
-        clip-path: polygon(50% 9%, 100% 0, 100% 100%, 75% 100%, 0 100%, 0 0);
+        clip-path: polygon(49% 5%, 100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
     }
 
     .img-edu {
@@ -272,6 +281,18 @@
     }
 
     #past {
+        display: none;
+    }
+
+    #skills {
+        margin:15px -30px 15px -60px; 
+    }
+
+    #skills .badge {
+        font-size:12px;
+    }
+
+    .img-skills{
         display: none;
     }
 }
