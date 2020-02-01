@@ -144,6 +144,10 @@
     text-align: justify;
 }
 
+.download-mob{
+    display: none;
+}
+
 .title-name {
     letter-spacing: 2px;
 }
@@ -154,7 +158,7 @@
 
 #experience {
     margin: -30px -48px 0 -48px;
-    background: #3d3d3d;
+    background: #0c7ec0;
     padding: 70px 40px 35px 40px;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -173,8 +177,8 @@
 
 #education {
     margin: -0px -48px 0 -48px;
-    background: rgb(50, 74, 187);
-    background: linear-gradient(90deg, rgba(50, 74, 187, 1) 15%, rgb(128, 151, 232) 100%);
+    background: rgb(83, 84, 88);
+    background: linear-gradient(90deg, rgb(67, 69, 77) 15%, rgb(91, 96, 112) 100%);
     color: white;
     padding: 50px 40px 80px 40px;
     font-family: 'Poppins', sans-serif;
@@ -211,6 +215,15 @@
         text-align: center;
         margin: 10px -20px;
         letter-spacing: 0.1em;
+    }
+
+    .download-desk{
+        display: none;
+    }
+
+    .download-mob{
+        display: block;
+        text-align: center;
     }
 
     .btn-intro {
