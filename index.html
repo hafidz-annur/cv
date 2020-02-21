@@ -141,7 +141,8 @@
         }
 
         #portofolio{
-            margin:30px -48px -45px -48px;
+            margin:20px -48px -45px -48px;
+            padding-top:40px;
         }
 
         @media only screen and (max-width: 600px) {
@@ -206,13 +207,92 @@
 
 
     </style>
+    <style>
+    .navbar-bottom {
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .nav-card {
+            display: none;
+        }
+
+        #return-to-top {
+            display: none !important;
+        }
+
+        .navbar-bottom {
+            display: block;
+            background:rgba(126, 170, 236, 0.904);
+            width:100%;
+            bottom:0;
+            position: fixed;
+            z-index: 1000;
+            padding:10px 0px 0px 0px;
+            transition-duration: 1s;
+        }
+
+        .nav-menu a{
+            text-align:center;
+            color: rgb(49, 49, 49);
+            z-index: 1001;
+            cursor: pointer;
+        }
+
+        .nav-text {
+            font-size:11px !important;
+            line-height: 1 !important;
+            text-decoration: none !important;
+        }
+
+        .actived {
+            background: rgba(59, 110, 221, 0.74);
+            padding-top: 10px !important;
+            margin-top:-12px;
+            margin-bottom: -10px;
+        }
+
+        .actived a{
+            color: #fff;
+            text-decoration: none !important;
+        }
+    }
+    </style>
 </head>
 
 <body class="bg" id="top" data-spy="scroll" data-target=".menus">
     <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
+    <div class="navbar-bottom">
+        <div class="row no-gutters text-center">
+            <div class="col nav-menu actived">
+                <h5><a href="#top"><i class="mb-2 fa fa-user"></i><br>
+                    <div class="nav-text"><p>Intro</p></div></a></h5></a></h5>
+            </div>
+            <div class="col nav-menu">
+                <h5><a href="#experience"><i class="mb-2 fa fa-tasks"></i><br>
+                    <div class="nav-text"><p>Experience</p></div></a></h5>
+            </div>
+            <div class="col nav-menu">
+                <h5><a href="#education"><i class="mb-2 fa fa-graduation-cap"></i><br>
+                    <div class="nav-text"><p>Education</p></div></a></h5></a></h5>
+            </div>
+            <div class="col nav-menu">
+                <h5><a href="#skills"><i class="mb-2 fa fa-get-pocket"></i><br>
+                    <div class="nav-text"><p>Skills</p></div></a></h5></a></h5>
+            </div>
+            <div class="col nav-menu">
+                <h5><a href="#hobby"><i class="mb-2 fa fa-gamepad"></i><br>
+                    <div class="nav-text"><p>Hobby</p></div></a></h5></a></h5>
+            </div>
+            <div class="col nav-menu">
+                <h5><a href="#portofolio"><i class="mb-2 fa fa-rocket"></i><br>
+                    <div class="nav-text"><p>Portofolio</p></div></a></h5></a></h5>
+            </div>             
+        </div>
+    </div>
     <div class="container-fluid pt-4 mt-4">
         <div class="row">
-            <div class="col-md-3 mb-3">
+            <div class="col-md-3 mb-3 nav-card">
                 <div class="card shadow col-menus" style="opacity:0.9;">
                     <div class="list-group menus">
                         <span class="p-3 bg-title text-center">
@@ -717,6 +797,14 @@
             $('.menus a').click(function () {
                 $('.menus a').removeClass("active");
                 $(this).addClass("active");
+            });
+        });
+
+        $(document).ready(function () {
+            $('.nav-menu').click(function () {
+                console.log('test');
+                $('.nav-menu').removeClass("actived");
+                $(this).addClass("actived");
             });
         });
 
