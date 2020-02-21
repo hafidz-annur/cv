@@ -72,7 +72,7 @@
 
         #education {
             margin: 0px -48px 0 -48px;
-	    padding: 30px 20px;
+	        padding: 30px 20px;
             background: url("assets/bg-parallax.jpg");
             background-attachment: fixed;
             background-position: top;
@@ -142,6 +142,26 @@
             margin:30px -48px -47px -48px;
         }
 
+        @media only screen and (max-width: 600px) {
+            .carousel-item{
+                height: 200px !important;        
+            }
+
+            .carousel-item h3 {
+                font-size: 14px !important;
+            }
+            .carousel-item h6 {
+                font-size: 12px !important;
+            }
+
+            .text-portofolio {
+                color: #fff;
+                top:15% !important;
+                opacity:1;
+                padding: 0 50px !important;
+            }
+        }
+
         .carousel-item{
             height: 500px;
             background-attachment: fixed;
@@ -173,7 +193,6 @@
 			position: inline;
 			position:absolute;
             width:100%;
-            height:20px;
 			top:35%;
 			opacity:1;
         }
@@ -208,9 +227,6 @@
                         <a href="#contact" class="list-group-item list-group-item-action"><i
                                 class="fa fa-address-book-o fa-fw"></i>
                             &nbsp; Contact</a>
-                    </div>
-                    <div class="card-body text-center">
-                        <a href="#" class="btn btn-sm btn-warning">Download CV/Resume (PDF)</a>
                     </div>
                 </div>
             </div>
