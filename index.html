@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito|Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style2.css">
-    <title>MY CV/RESUME</title>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Curriculum Vitae</title>
     <style>
+		@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+		body {
+			font-family: 'Raleway', sans-serif !important;
+		}
         .img-work {
             height: 500px;
             background: url("assets/works.jpg");
@@ -48,6 +52,7 @@
             opacity: 0;
             transition: .5s ease;
             background-color: rgba(73, 182, 255, 0.377);
+			cursor:pointer;
         }
 
         .text {
@@ -65,15 +70,112 @@
             text-align: center;
         }
 
-        #past {
-            height: 100px;
-            clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 88%);
-            margin: -20px -48px 0 -48px;
+        #education {
+            margin: 0px -48px 0 -48px;
+	    padding: 30px 20px;
             background: url("assets/bg-parallax.jpg");
             background-attachment: fixed;
             background-position: top;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+		
+		.edu-card {
+			opacity:0.9;
+			transition-duration: 0.3s;
+			margin-bottom:20px;
+		}
+		
+		.edu-card:hover {
+			opacity:1;
+			margin-top:-10px;
+			background:#fff;
+			color:#000 !important;
+		}
+		
+		.content {
+			letter-spacing:1px;
+		}
+		
+		.bg-grey {
+			background: #CAC9C9;
+			color: #000;
+	    }
+		
+		.interest-card{
+		   height:250px;
+		   padding:31% 0;
+		   text-align:center;
+		   opacity:0.8;
+		   transition-duration: 0.3s;
+		}
+		
+		.interest-card:hover .overlay-card {
+		   opacity:1;
+		}
+		
+		.overlay-card {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(73, 182, 255, 0.377);
+			cursor:pointer;
+        }
+		
+		.text-card {
+			padding:20px;
+			position: inline;
+			position:absolute;
+			width:100%;
+			bottom:0;
+            background:#000;
+			opacity:0.7;
+        }
+
+        #portofolio{
+            margin:30px -48px -47px -48px;
+        }
+
+        .carousel-item{
+            height: 500px;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;            
+        }
+
+        .carousel-item:hover .overlay-porto{
+            opacity:1;
+        }
+
+        .overlay-porto {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(20, 32, 41, 0.884);
+			cursor:pointer;
+        }
+
+        .text-portofolio {
+            color: #fff;
+			padding:20px;
+			position: inline;
+			position:absolute;
+            width:100%;
+            height:20px;
+			top:35%;
+			opacity:1;
         }
     </style>
 </head>
@@ -99,8 +201,8 @@
                         <a href="#skills" class="list-group-item list-group-item-action"><i
                                 class="fa fa-address-book-o fa-fw"></i>
                             &nbsp; Skills</a>
-                        <a href="#interest" class="list-group-item list-group-item-action"><i
-                                class="fa fa-address-book-o fa-fw"></i> &nbsp; Interests</a>
+                        <a href="#hobby" class="list-group-item list-group-item-action"><i
+                                class="fa fa-address-book-o fa-fw"></i> &nbsp; Hobby</a>
                         <a href="#portofolio" class="list-group-item list-group-item-action"><i
                                 class="fa fa-address-book-o fa-fw"></i> &nbsp; Portofolio</a>
                         <a href="#contact" class="list-group-item list-group-item-action"><i
@@ -126,7 +228,7 @@
                     <div class="col">
                         <hr style="border:3px solid greenyellow;" class="mt-1">
                     </div>
-                    <div class="col-md-12 p-5 bg-white shadow" style="margin-top:-17px;">
+                    <div class="col-md-12 p-5 bg-white shadow content" style="margin-top:-17px;">
                         <section id="intro">
                             <div class="row content">
                                 <div class="col-md-3 text-center mb-3">
@@ -233,7 +335,7 @@
                                 <div class="col-md-3 img-work">
                                 </div>
                                 <div class="col-md-9">
-                                    <h4 class="mb-4">Work Experience</h4>
+                                    <h4 class="mb-4">WORK EXPERIENCE</h4>
                                     <hr class="hr-title">
                                     <ul class="StepProgress">
                                         <li class="StepProgress-item">
@@ -294,94 +396,103 @@
                         </section>
                         <section id="education">
                             <div class="row">
-                                <div class="col-md-12">
-                                    <h4 class="mb-4">Education</h4>
-                                    <hr class="hr-title">
-                                    <img src="assets/edu.jpg" class="img-edu">
-                                    <ul class="StepProgress">
-                                        <li class="StepProgress-item">
-                                            <h6><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>&nbsp;
-                                                STMIK Duta Bangsa
-                                                Surakarta</h6>
-                                            <hr class="m-0 mb-2 text-left" width="30%"
-                                                style="border:0.5px dashed #fff;">
-                                            <i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; 2014 -
-                                            2018 <br>
-                                            <i class="fa fa-tags fa-fw" aria-hidden="true"></i>&nbsp; S1 -
-                                            Information System
-                                        </li>
-                                        <li class="StepProgress-item">
-                                            <h6><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>&nbsp; SMK
-                                                N 5 Surakarta</h6>
-                                            <hr class="m-0 mb-2 text-left" width="30%"
-                                                style="border:0.5px dashed #fff;">
-                                            <i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; 2011 -
-                                            2014 <br>
-                                            <i class="fa fa-tags fa-fw" aria-hidden="true"></i>&nbsp; Software
-                                            Engineering
-                                        </li>
-                                        <li class="StepProgress-item">
-                                            <h6><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i>&nbsp; SMP
-                                                N 27 Surakarta</h6>
-                                            <hr class="m-0 mb-2 text-left" width="30%"
-                                                style="border:0.5px dashed #fff;">
-                                            <i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; 2008 -
-                                            2011
-                                        </li>
-                                    </ul>
+                                <div class="col-md-12 text-center">
+                                    <h4 class="text-white">EDUCATION</h4>
+                                    <hr width="20%" class="mb-5" style="border:1px solid #fff;">
+									<div class="row">
+										<div class="col-md">
+											<div class="card shadow edu-card">
+												<div class="bg-secondary text-center pt-3">
+													<i class="fa fa-graduation-cap fa-fw fa-3x mb-3 text-white" aria-hidden="true"></i>
+												</div>
+												<div class="card-body text-center text-dark">
+													<h6>STMIK Duta Bangsa <br> Surakarta</h6>
+													<hr>
+													2014 - 2018 <br>
+													S1 - Information System
+												</div>
+											</div>
+										</div>
+										<div class="col-md">
+											<div class="card shadow edu-card">
+												<div class="bg-secondary text-center pt-3">
+													<i class="fa fa-graduation-cap fa-fw fa-3x mb-3 text-white" aria-hidden="true"></i>
+												</div>
+												<div class="card-body text-center text-muted">
+													<h6>SMK NEGERI 5 <br> Surakarta</h6>
+													<hr>
+													2011 - 2014 <br>
+													Software Engineer
+												</div>
+											</div>
+										</div>
+										<div class="col-md">
+											<div class="card shadow edu-card">
+												<div class="bg-secondary text-center pt-3">
+													<i class="fa fa-graduation-cap fa-fw fa-3x mb-3 text-white" aria-hidden="true"></i>
+												</div>
+												<div class="card-body text-center text-muted">
+													<h6>SMP NEGERI 27 <br> Surakarta</h6>
+													<hr>
+													2008 - 2011 <br>
+													&nbsp;
+												</div>
+											</div>
+										</div>
+									</div>
                                 </div>
                         </section>
-                        <section id="past"></section>
+                        <!-- <section id="past"></section> -->
                         <section id="skills">
                             <div class="row">
                                 <div class="col-md-4 img-skills">
                                     <div class="overlay">
                                         <div class="text">
-                                            <h2 class="mb-0">Skills</h2>
+                                            <h2 class="mb-0">SKILLS</h2>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-8 pl-5 content">
                                     <h4 class="mb-4">Skills</h4>
                                     <hr class="hr-title">
-                                    <div class="badge p-2 bg-info text-white mb-2 mr-2">PHP Native</div>
-                                    <div class="badge p-2 bg-danger text-white mb-2 mr-2">Framework Codeigniter</div>
-                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">HTML</div>
-                                    <div class="badge p-2 bg-success text-white mb-2 mr-2">Javascript</div>
-                                    <div class="badge p-2 bg-warning text-white mb-2 mr-2">CSS</div>
-                                    <div class="badge p-2 bg-primary text-white mb-2 mr-2">Jquery</div>
-                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">MYSQL</div>
-                                    <div class="badge p-2 bg-success text-white mb-2 mr-2">Framework Codeigniter</div>
-                                    <div class="badge p-2 bg-secondary text-white mb-2 mr-2">Bootstrap</div>
+                                    <div class="badge p-2 bg-grey mb-2 mr-2">PHP Native</div>
+                                    <div class="badge p-2 bg-grey mb-2 mr-2">Framework Codeigniter</div>
+                                    <div class="badge p-2 bg-grey mb-2 mr-2">HTML</div>
+                                    <div class="badge p-2 bg-grey mb-2 mr-2">Javascript</div>
+                                    <div class="badge p-2 bg-grey mb-2 mr-2">CSS</div>
+                                    <div class="badge p-2 bg-grey mb-2 mr-2">Jquery</div>
+                                    <div class="badge p-2 bg-grey mb-2 mr-2">MYSQL</div>
+                                    <div class="badge p-2 bg-grey mb-2 mr-2">Framework Codeigniter</div>
+                                    <div class="badge p-2 bg-grey mb-2 mr-2">Bootstrap</div>
 
                                     <div class="text-danger mt-3">Tools</div>
                                     <hr class="mt-1 mb-2">
-                                    <div class="badge p-2 bg-danger text-white mb-2 mr-2">Visual Studio Code</div>
-                                    <div class="badge p-2 bg-info text-white mb-2 mr-2">Coreldraw</div>
-                                    <div class="badge p-2 bg-success text-white mb-2 mr-2">XAMPP</div>
-                                    <div class="badge p-2 bg-secondary text-white mb-2 mr-2">Web Hosting</div>
-                                    <div class="badge p-2 bg-warning text-white mb-2 mr-2">Photoshop</div>
-                                    <div class="badge p-2 bg-danger text-white mb-2 mr-2">Wordpress</div>
-                                    <div class="badge p-2 bg-primary text-white mb-2 mr-2">Microsoft Office</div>
+                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">Visual Studio Code</div>
+                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">Coreldraw</div>
+                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">XAMPP</div>
+                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">Web Hosting</div>
+                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">Photoshop</div>
+                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">Wordpress</div>
+                                    <div class="badge p-2 bg-dark text-white mb-2 mr-2">Microsoft Office</div>
                                     <div class="text-danger mt-3">Languages</div>
                                     <hr class="mt-1 mb-2">
                                     <label>Javanese :</label>
-                                    <div class="progress border border-primary" style="height:25px;">
-                                        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
+                                    <div class="progress border border-dark" style="height:25px;">
+                                        <div class="progress-bar bg-secondary"
                                             role="progressbar" style="width: 75%" aria-valuenow="10" aria-valuemin="0"
                                             aria-valuemax="100">75%
                                         </div>
                                     </div>
                                     <label class="mt-3">Indonesia :</label>
-                                    <div class="progress border border-success" style="height:25px;">
-                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                                    <div class="progress border border-dark" style="height:25px;">
+                                        <div class="progress-bar bg-secondary"
                                             role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0"
                                             aria-valuemax="100">80%
                                         </div>
                                     </div>
                                     <label class="mt-3">English :</label>
-                                    <div class="progress border border-warning" style="height:25px;">
-                                        <div class="progress-bar bg-warning text-dark progress-bar-striped progress-bar-animated"
+                                    <div class="progress border border-dark" style="height:25px;">
+                                        <div class="progress-bar bg-secondary text-white"
                                             role="progressbar" style="width: 60%" aria-valuenow="10" aria-valuemin="0"
                                             aria-valuemax="100">60%
                                         </div>
@@ -390,6 +501,112 @@
 
                                 </div>
                             </div>
+                        </section>
+						<section id="hobby" class="no-gutters">
+							<h2 class="text-center text-dark m-0">HOBBY</h2>
+							<hr width="20%" class="mb-5" style="border:1px solid #000;">
+							<div style="margin:0px -40px;">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="interest-card" style="background: url('https://www.dbs.com/spark/index/id_id/site/img/pillars/66/66.jpg'); background-size: cover;">
+											<div class="overlay-card">
+												<div class="text-card">
+													<h5 class="mb-0">Jogging</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="interest-card" style="background: url('https://www.online-tech-tips.com/wp-content/uploads/2019/12/Feature.jpg.optimal.jpg'); background-size: cover;">
+											<div class="overlay-card">
+												<div class="text-card">
+													<h5 class="mb-0">Play Game</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="interest-card" style="background: url('https://image.freepik.com/free-photo/acoustic-guitar-playing_1426-615.jpg'); background-size: cover;">
+											<div class="overlay-card">
+												<div class="text-card">
+													<h5 class="mb-0">Play Music</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="interest-card" style="background: url('https://image.freepik.com/free-photo/businesswoman-working-office-with-smile-while-sitting_1150-14793.jpg'); background-size: cover;">
+											<div class="overlay-card">
+												<div class="text-card">
+													<h5 class="mb-0">Learn</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="interest-card" style="background: url('https://image.freepik.com/free-photo/man-with-headphones_137573-3037.jpg'); background-size: cover;">
+											<div class="overlay-card">
+												<div class="text-card">
+													<h5 class="mb-0">Listen Music</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="interest-card" style="background: url('https://image.freepik.com/free-photo/young-tourists-discovering-city_23-2147643246.jpg'); background-size: cover;">
+											<div class="overlay-card">
+												<div class="text-card">
+													<h5 class="mb-0">Travel</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        </section>
+                        <section id="portofolio">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h2 class="text-center text-dark m-0">PORTOFOLIO</h2>
+                                    <hr width="20%" class="mb-3" style="border:1px solid #000;">
+                                </div>
+                            </div>
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100 slider-img" src="assets/portofolio/allinedu.png">
+                                    <div class="overlay-porto">
+                                        <div class="text-portofolio text-center mx-auto">
+                                            <h3 class="mb-3 font-weight-bold">ALL - INEDUSPACE</h3>
+                                            <!-- <hr class="mt-1" style="border:1px solid #fff;" width="20%"> -->
+                                            <h6 class="mb-3">
+                                                Maintanance company profile site with Wordpress
+                                            </h6>
+                                            <a href="https://all-inedu.com" target="_blank" class="btn btn-sm btn-danger"><i class="fa fa-search"></i>&nbsp; View Website </a>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://image.winudf.com/v2/image/Y29tLmRvb2RsZXdhbGxwYXBlci5rcmVib29kZXYubGF3X3NjcmVlbl8wXzE1MzEzMjk2ODNfMDYy/screen-0.jpg?fakeurl=1&type=.jpg" alt="Second slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/11/21/17/35/beach-1846697_960_720.jpg" alt="Third slide">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </div>
                         </section>
                     </div>
                 </div>

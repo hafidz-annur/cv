@@ -130,13 +130,11 @@
 }
 
 .content {
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+	font-family: 'Raleway', sans-serif !important;
+	font-size:13px;
 }
 
 #intro {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
     padding-bottom: 20px;
 }
 
@@ -161,8 +159,6 @@
     background: #0c7ec0;
     padding: 70px 40px 35px 40px;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
     clip-path: polygon(79% 10%, 100% 4%, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 0);
 }
 
@@ -175,15 +171,6 @@
     background-size: cover;
 }
 
-#education {
-    margin: -0px -48px 0 -48px;
-    background: rgb(83, 84, 88);
-    background: linear-gradient(90deg, rgb(67, 69, 77) 15%, rgb(91, 96, 112) 100%);
-    color: white;
-    padding: 50px 40px 80px 40px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-}
 
 .img-edu {
     width: 400px;
@@ -194,11 +181,18 @@
 
 #skills{
     padding: 50px 10px 80px 10px;
-    font-family: 'Poppins', sans-serif;
 }
 
 #skills .badge{
-    font-size: 11px;
+    font-size: 13px;
+}
+
+#hobby {
+	margin: -20px -48px 0 -48px;
+    background: #E0DDDD;
+    color: white;
+    padding: 80px 40px 80px 40px;
+	clip-path: polygon(50% 5%, 100% 0, 100% 100%, 100% 100%, 50% 96%, 0 100%, 0 0);
 }
 
 
@@ -270,10 +264,9 @@
     }
 
     #education {
-        margin: -40px -48px;
         padding: 70px 10px 30px 10px;
         background: #4271ff;
-        clip-path: polygon(49% 5%, 100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+        
     }
 
     .img-edu {
@@ -285,7 +278,8 @@
     }
 
     #skills {
-        margin:15px -30px 15px -60px; 
+        margin:0px -30px 0px -60px; 
+		clip-path: polygon(49% 0, 100% 0, 100% 81%, 100% 97%, 52% 100%, 0 97%, 0 0);
     }
 
     #skills .badge {
@@ -294,5 +288,11 @@
 
     .img-skills{
         display: none;
+		cursor:pointer;
     }
+	
+	#hobby{
+		clip-path: polygon(49% 3%, 100% 0, 100% 81%, 100% 97%, 52% 100%, 0 97%, 0 0);
+		padding-top:90px ;
+	}
 }
