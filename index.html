@@ -227,28 +227,33 @@
 
         .navbar-bottom {
             display: block;
-            background:rgb(209, 218, 233);
+            background:rgb(255, 255, 255);
             width:100%;
             bottom:0;
             position: fixed;
             z-index: 1000;
-            padding:13px 0px 0px 0px;
+            padding:5px 0px 0px 0px;
             -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
             -moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
             box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
         }
 
         .nav-menu h5 {
-            border-left: 1px solid rgba(109, 109, 109, 0.397) !important;
-            padding: 0 5px;
+            /* border-left: 1px solid rgba(109, 109, 109, 0.397) !important; */
+            padding: 0 7px;
+            margin-bottom: -12px;
         }
 
         .nav-menu a{
             transition-duration: 1s;
             text-align:center;
-            color: rgb(49, 49, 49);
+            color:#6d6969;
             z-index: 1001;
             cursor: pointer;
+        }
+
+        .nav-menu a img {
+            filter: invert(47%) sepia(0%) saturate(1348%) hue-rotate(195deg) brightness(88%) contrast(95%);
         }
 
         .nav-text {
@@ -258,14 +263,15 @@
         }
 
         .actived {
-            background: rgba(59, 110, 221, 0.74);
-            padding-top: 10px !important;
+            /* background: rgba(59, 110, 221, 0.74); */
+            padding-top: 12px !important;
             margin-top:-12px;
-            margin-bottom: -10px;
+            margin-bottom: -15px;
         }
 
-        .actived a{
-            color: #fff;
+        .actived h5 a{
+            filter: invert(51%) sepia(93%) saturate(2030%) hue-rotate(158deg) brightness(90%) contrast(101%);
+            color: #00a4d6;
             text-decoration: none !important;
         }
     }
@@ -277,27 +283,27 @@
     <div class="navbar-bottom">
         <div class="row no-gutters text-center">
             <div class="col nav-menu actived">
-                <h5><a href="#top"><i class="mb-2 fa fa-user"></i><br>
+                <h5><a href="#top"><img src="assets/icons/assignment_ind-24px.svg" class="mb-1"><br>
                     <div class="nav-text"><p>Intro</p></div></a></h5></a></h5>
             </div>
             <div class="col nav-menu">
-                <h5><a href="#experience"><i class="mb-2 fa fa-tasks"></i><br>
+                <h5><a href="#experience"><img src="assets/icons/work_outline-24px.svg" class="mb-1"><br>
                     <div class="nav-text"><p>Experience</p></div></a></h5>
             </div>
             <div class="col nav-menu">
-                <h5><a href="#education"><i class="mb-2 fa fa-graduation-cap"></i><br>
+                <h5><a href="#education"><img src="assets/icons/school-24px.svg" class="mb-1"><br>
                     <div class="nav-text"><p>Education</p></div></a></h5></a></h5>
             </div>
             <div class="col nav-menu">
-                <h5><a href="#skills"><i class="mb-2 fa fa-get-pocket"></i><br>
+                <h5><a href="#skills"><img src="assets/icons/local_play-24px.svg" class="mb-1"><br>
                     <div class="nav-text"><p>Skills</p></div></a></h5></a></h5>
             </div>
             <div class="col nav-menu">
-                <h5><a href="#hobby"><i class="mb-2 fa fa-gamepad"></i><br>
+                <h5><a href="#hobby"><img src="assets/icons/videogame_asset-24px.svg" class="mb-1"><br>
                     <div class="nav-text"><p>Hobby</p></div></a></h5></a></h5>
             </div>
             <div class="col nav-menu">
-                <h5><a href="#portofolio"><i class="mb-2 fa fa-rocket"></i><br>
+                <h5><a href="#portofolio"><img src="assets/icons/important_devices-24px.svg" class="mb-1"><br>
                     <div class="nav-text"><p>Portofolio</p></div></a></h5></a></h5>
             </div>             
         </div>
