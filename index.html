@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="icon" type="image/png" href="assets/site.ico">
@@ -228,9 +228,11 @@
         .navbar-top {
             color:white !important;
             display: block;
-            background:rgba(55, 118, 235, 0.938);
+            background:#00a4d6;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 78% 80%, 50% 100%, 50% 100%, 22% 80%, 0 80%);
             width:100%;
             top:0;
+            height: 30px;
             position: fixed;
             z-index: 1000;
             padding:5px 0px 0px 0px;
@@ -240,7 +242,21 @@
         }
 
         .navbar-top img {
+            display: none;
             filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(102deg) brightness(105%) contrast(87%);
+            width: 20px;
+        }
+
+        .navbar-top img:hover {
+            filter: invert(20%) sepia(3%) saturate(2489%) hue-rotate(81deg) brightness(92%) contrast(78%);
+        }
+
+        .nav-title {
+            font-size: 18px;
+            margin-top:-2px;
+            text-align: center;
+            /* font-weight: bold; */
+            font-family: 'Pacifico' !important ;
         }
 
         .navbar-bottom {
@@ -299,8 +315,8 @@
 <body class="bg" id="top" data-spy="scroll" data-target=".menus">
     <a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up"></i></a>
     <div class="navbar-top pl-3">
-        <h5>E-RESUME</h5>
-        <div class="float-right pr-3" style="margin-top:-32px;">
+        <h5 class="nav-title">eResume</h5>
+        <div class="float-right pr-3" style="margin-top:-28px;">
             <a href="#contact"><img src="assets/icons/comment-24px.svg"></a>
         </div>
     </div>
