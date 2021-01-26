@@ -1,0 +1,295 @@
+
+        @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif !important;
+        }
+
+        .img-work {
+            height: 500px;
+            background: url("assets/works.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .img-skills {
+            height: 470px;
+            background: url("assets/works.jpg");
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: all .8s;
+        }
+
+        .img-skills:hover .overlay {
+            opacity: 0.9;
+        }
+
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(73, 182, 255, 0.377);
+            cursor: pointer;
+        }
+
+        .text {
+            background: rgb(32, 32, 32);
+            padding: 5px 30px;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        #education {
+            margin: 0px -48px 0 -48px;
+            padding: 30px 20px;
+            background: url("assets/bg-parallax.jpg");
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .edu-card {
+            opacity: 0.9;
+            transition-duration: 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .edu-card:hover {
+            opacity: 1;
+            margin-top: -10px;
+            background: #fff;
+            color: #000 !important;
+        }
+
+        .content {
+            letter-spacing: 1px;
+        }
+
+        .bg-grey {
+            background: #CAC9C9;
+            color: #000;
+        }
+
+        .interest-card {
+            height: 250px;
+            padding: 31% 0;
+            text-align: center;
+            opacity: 0.8;
+            transition-duration: 0.3s;
+        }
+
+        .interest-card:hover .overlay-card {
+            opacity: 1;
+        }
+
+        .overlay-card {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(73, 243, 255, 0.473);
+            cursor: pointer;
+        }
+
+        .text-card {
+            padding: 20px;
+            position: inline;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            background: #000;
+            opacity: 0.9;
+        }
+
+        #portofolio {
+            margin: 20px -48px -45px -48px;
+            padding-top: 40px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .carousel-item {
+                height: 200px !important;
+            }
+
+            .carousel-item h3 {
+                font-size: 14px !important;
+            }
+
+            .carousel-item h6 {
+                font-size: 12px !important;
+            }
+
+            .text-portofolio {
+                color: #fff;
+                top: 3% !important;
+                opacity: 1;
+                padding-left: 50px !important;
+                padding-right: 50px !important;
+            }
+        }
+
+        .carousel-item {
+            height: 500px;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        .carousel-item:hover .overlay-porto {
+            opacity: 1;
+        }
+
+        .overlay-porto {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(20, 32, 41, 0.884);
+            cursor: pointer;
+        }
+
+        .text-portofolio {
+            color: #fff;
+            padding: 20px 100px;
+            position: inline;
+            position: absolute;
+            width: 100%;
+            top: 35%;
+            opacity: 1;
+        }
+
+        #contact {
+            margin: 70px -47px 20px -47px;
+        }
+
+        .navbar-bottom,
+        .navbar-top {
+            display: none;
+        }
+
+        #return-to-top {
+            display: block !important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .nav-card {
+                display: none;
+            }
+
+            #return-to-top {
+                display: none !important;
+            }
+
+            .navbar-top {
+                color: white !important;
+                display: block;
+                background: #00a4d6;
+                clip-path: polygon(0 0, 100% 0, 100% 80%, 78% 80%, 50% 100%, 50% 100%, 22% 80%, 0 80%);
+                width: 100%;
+                top: 0;
+                height: 30px;
+                position: fixed;
+                z-index: 1000;
+                padding: 5px 0px 0px 0px;
+                -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+            }
+
+            .navbar-top img {
+                display: none;
+                filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(102deg) brightness(105%) contrast(87%);
+                width: 20px;
+            }
+
+            .navbar-top img:hover {
+                filter: invert(20%) sepia(3%) saturate(2489%) hue-rotate(81deg) brightness(92%) contrast(78%);
+            }
+
+            .nav-title {
+                font-size: 18px;
+                margin-top: -2px;
+                text-align: center;
+                /* font-weight: bold; */
+                font-family: 'Pacifico' !important;
+            }
+
+            .navbar-bottom {
+                display: block;
+                background: rgb(255, 255, 255);
+                width: 100%;
+                bottom: 0;
+                position: fixed;
+                z-index: 1000;
+                padding: 5px 0px 0px 0px;
+                -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+            }
+
+            .nav-menu h5 {
+                /* border-left: 1px solid rgba(109, 109, 109, 0.397) !important; */
+                padding: 0 7px;
+                margin-bottom: -10px;
+            }
+
+            .nav-menu a {
+                /* transition-duration: 1s; */
+                text-align: center;
+                color: #6d6969;
+                z-index: 1001;
+                cursor: pointer;
+            }
+
+            .nav-menu a img {
+                filter: invert(47%) sepia(0%) saturate(1348%) hue-rotate(195deg) brightness(88%) contrast(95%);
+            }
+
+            .nav-text {
+                font-size: 11px !important;
+                line-height: 1 !important;
+                text-decoration: none !important;
+            }
+
+            .actived {
+                /* background: rgba(59, 110, 221, 0.74); */
+                padding-top: 12px !important;
+                margin-top: -12px;
+                margin-bottom: -15px;
+            }
+
+            .actived h5 a {
+                filter: invert(51%) sepia(93%) saturate(2030%) hue-rotate(158deg) brightness(90%) contrast(101%);
+                color: #00a4d6;
+                text-decoration: none !important;
+            }
+        }
