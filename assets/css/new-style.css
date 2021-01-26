@@ -7,7 +7,7 @@
 
         .img-work {
             height: 500px;
-            background: url("assets/works.jpg");
+            background: url("../../assets/works.jpg");
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
         .img-skills {
             height: 470px;
-            background: url("assets/works.jpg");
+            background: url("../../assets/works.jpg");
             background-position: right;
             background-repeat: no-repeat;
             background-size: cover;
@@ -60,7 +60,7 @@
         #education {
             margin: 0px -48px 0 -48px;
             padding: 30px 20px;
-            background: url("assets/bg-parallax.jpg");
+            background: url("../../assets/bg-parallax.jpg");
             background-attachment: fixed;
             background-position: top;
             background-repeat: no-repeat;
